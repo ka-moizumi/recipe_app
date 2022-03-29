@@ -2,15 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
 import { CheckBox } from "./components/atoms/CheckBox/Checkbox";
-import { SearchInput } from "./components/molecules/SeachInput";
+import { SearchInput } from "./components/molecules/SearchInput";
+import { Header } from "./components/organisms/Header";
+import { Menu } from "./components/molecules/Menu";
 
 export const App = () => {
   return (
     <SWrapper>
       <SHeader>
-        <PrimaryButton>ホーム</PrimaryButton>
-        <PrimaryButton>レシピ登録</PrimaryButton>
-        <PrimaryButton>お気に入り</PrimaryButton>
+        <Header />
       </SHeader>
       <SearchInput />
       <SGenre>
@@ -33,10 +33,7 @@ const SWrapper = styled.div`
   height: 100%;
 `;
 
-const SHeader = styled.div`
-  display: flex;
-  background-color: #aaeeaa;
-`;
+const SHeader = styled.div``;
 
 const SGenre = styled.div`
   width: 100%;
